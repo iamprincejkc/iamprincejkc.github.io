@@ -9,6 +9,15 @@
 
 window.addEventListener('DOMContentLoaded', event => {
 
+    var splashScreen = document.querySelector('.splash');
+    splashScreen.addEventListener('click', () => {
+        splashScreen.style.opacity = 0;
+        setTimeout(() => {
+            splashScreen.classList.add('hidden')
+        }, 610)
+    });
+
+
     // Activate Bootstrap scrollspy on the main nav element
     const sideNav = document.body.querySelector('#sideNav');
     if (sideNav) {
