@@ -240,24 +240,71 @@
             <div class="resume-section-content">
 
                 <h2 class="mb-5">Blogs</h2>
-                <div class="wrap">
+                <div class="grid-container">
                     <div class="box">
+                        <h3>Blog post 1</h3>
                         <div class="boxInner">
                             <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7049406766681395200"
                                 height="340" width="504" frameborder="0" allowfullscreen=""
-                                title="Embedded post"></iframe>
-                            <div class="titleBox">Butterfly</div>
+                                title="Blog post 1"></iframe>
                         </div>
                     </div>
                     <div class="box">
-                        <div class="boxInner"> <iframe
-                                src="https://www.linkedin.com/embed/feed/update/urn:li:share:7051369107849433088"
+                        <h3>Blog post 2</h3>
+                        <div class="boxInner">
+                            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7051369107849433088"
                                 height="340" width="504" frameborder="0" allowfullscreen=""
-                                title="Embedded post"></iframe>
-                            <div class="titleBox">An old greenhouse</div>
+                                title="Blog post 2"></iframe>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h3>Blog post 3</h3>
+                        <div class="boxInner">
+                            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7052637966191529984"
+                                height="340" width="504" frameborder="0" allowfullscreen=""
+                                title="Blog post 3"></iframe>
                         </div>
                     </div>
                 </div>
+
+                <style>
+                    .grid-container {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        grid-gap: 1rem;
+                    }
+
+                    .box {
+                        background-color: #f5f5f5;
+                        padding: 1rem;
+                    }
+
+                    .box h3 {
+                        margin-top: 0;
+                    }
+
+                    .boxInner {
+                        position: relative;
+                        padding-bottom: 56.25%;
+                        height: 0;
+                        overflow: hidden;
+                    }
+
+                    .boxInner iframe {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    /* Media query for small screens */
+                    @media (max-width: 767px) {
+                        .grid-container {
+                            grid-template-columns: 1fr;
+                        }
+                    }
+                </style>
             </div>
         </section>
         <hr class="m-0" />
