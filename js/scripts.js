@@ -9,8 +9,9 @@
 
 window.addEventListener('DOMContentLoaded', event => {
 
+    var visit = document.querySelector('.visit');
     var splashScreen = document.querySelector('.splash');
-    splashScreen.addEventListener('click', () => {
+    visit.addEventListener('click', () => {
         splashScreen.style.opacity = 0;
         setTimeout(() => {
             splashScreen.classList.add('hidden')
